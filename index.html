@@ -18,6 +18,7 @@
     <style>
         h1{
             color:green;
+            text-align: center;
         }
         h2{
             color: crimson;
@@ -29,11 +30,14 @@
 
     .blog{
         color: purple;
-        border: 30px solid green;
+        border: 10px solid green;
         border-radius: 20px;
         margin: 20px;
         padding: 40px;
         background-color: #b7ff90;
+        width: 200px;
+        height: 400px;
+        overflow: hidden scroll;
     }
     #devide{
         color: red;
@@ -51,6 +55,22 @@
         padding: 5px;
        
     }
+
+        .tooltip .tooltip-text{
+            width: 150px;
+            height: 200px;
+            border-radius: 10px;
+            background-color: blue;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+            position: relative;
+            z-index: 1px;
+            visibility: hidden;
+        }
+        .tooltip:hover .tooltip-text{
+            visibility: visible;
+        }
     </style>
 
 
@@ -65,6 +85,13 @@
 
     
     <body>
+        <br></br>
+        <a href="#" class="tooltip">
+            facebook
+            <span class="tooltip-text">facebook is a social media</span>
+        </a>
+
+
         <h2>বাংলাদেশের রাজধানী ঢাকা</h2>
 
 
